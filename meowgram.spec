@@ -1,3 +1,6 @@
+# Fix for broken debug
+%define _empty_manifest_terminate_build 0
+
 %define oname Meowgram
 
 Summary:  Telegram client written in GTK & Python
@@ -9,10 +12,13 @@ Group:		Networking/Instant messaging
 Url:      https://github.com/ExposedCat/Meowgram
 Source0:  https://github.com/ExposedCat/Meowgram/archive/refs/heads/main/%{oname}-main.tar.gz
 
+BuildRequires:  appstream-util
 BuildRequires:  meson
 BuildRequires:  pkgconfig(python)
 BuildRequires:  pkgconfig(glib-2.0)
-#TBC
+
+# For non GTK/GNOME deskops installation.
+Requires: gtk+3.0
 
 %description
 Meowgram is a Telegram client written in GTK and Python.
