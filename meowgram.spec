@@ -38,3 +38,10 @@ Gram - Part of platform name: Telegram. It says about which messanger is client 
 %meson_install
 
 %files
+%{_bindir}/meowgram
+%{_datadir}/applications/com.github.ExposedCat.Meowgram.desktop
+%{_datadir}/appdata/com.github.ExposedCat.Meowgram.appdata.xml
+%{_datadir}/glib-2.0/schemas/com.github.ExposedCat.Meowgram.gschema.xml
+%{_datadir}/meowgram/meowgram*
+%{_iconsdir}/hicolor/scalable/apps/com.github.ExposedCat.Meowgram.svg
+%{_iconsdir}/hicolor/symbolic/apps/com.github.ExposedCat.Meowgram-symbolic.svg
