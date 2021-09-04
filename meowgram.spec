@@ -2,13 +2,14 @@
 %define _empty_manifest_terminate_build 0
 
 %define oname Meowgram
+%define gitdate 20210618
 
 Summary:  Telegram client written in GTK & Python
 Name:     meowgram
 Version:  0.1.0
-Release:  0
+Release:  0.%{gitdate}.0
 License:  GPLv3.0
-Group:		Networking/Instant messaging
+Group:    Networking/Instant messaging
 Url:      https://github.com/ExposedCat/Meowgram
 Source0:  https://github.com/ExposedCat/Meowgram/archive/refs/heads/main/%{oname}-main.tar.gz
 
