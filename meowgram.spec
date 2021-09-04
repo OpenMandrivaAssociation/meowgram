@@ -11,6 +11,7 @@ Source0:  https://github.com/ExposedCat/Meowgram/archive/refs/heads/main/%{oname
 
 BuildRequires:  meson
 BuildRequires:  pkgconfig(python)
+BuildRequires:  pkgconfig(glib-2.0)
 #TBC
 
 %description
