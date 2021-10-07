@@ -22,8 +22,10 @@ BuildRequires:  pkgconfig(libadwaita-1)
 # For non GTK/GNOME deskops installation.
 Requires: gtk+3.0
 Requires: gtk+4.0
-
 Requires: %{_lib}adwaita1_0
+
+Requires: python3dist(bleach)
+Requires: python3dist(telethon)
 
 %description
 Meowgram is a Telegram client written in GTK and Python.
